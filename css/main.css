@@ -101,8 +101,6 @@ Author's custom styles
 
 /* Apply a natural box layout model to all elements, but allowing components to change */
 
-@charset "UTF-8";
-
 html {
   box-sizing: border-box;
 }
