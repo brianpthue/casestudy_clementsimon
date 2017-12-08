@@ -116,6 +116,32 @@ body, html, main {
   height: 100%;
 }
 
+h1,
+h2, 
+h3,
+h4, 
+h5,
+p,
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  line-height: 1.4;
+}
+
+h2,
+h3 {
+  color: #333;
+  text-align: left;
+}
+
+h2, h3, h4, h5 {
+  letter-spacing: 0.05em;
+}
+
+h2, h5 {
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
 }
@@ -131,7 +157,6 @@ ul {
 /* Page Header */
 
 .page-header {
-  color: #000;
   padding: 0 2.5em;
   top: 0;
   left: 0;
@@ -140,7 +165,6 @@ ul {
 }
 
 h1 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 3em;
   font-weight: 700;
   color: #000;
@@ -150,10 +174,6 @@ h1 {
 }
 
 /* Jumbotron Background Image */
-
-.jumbotron {
-  padding: 0;
-}
 
 .jumbotron__bg {
   display: block;
@@ -165,35 +185,27 @@ h1 {
   background-size: cover;
 }
 
-.jumbotron__content {
-  color: #fff;
-  position: absolute;
-  z-index: 10;
-  left: 49.25%;
-}
-
 .jumbotron__content p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.075em;
   font-size: 0.75em;
-  padding-top: 625px;
-  position: fixed;
+  font-weight: 300;
+  color: #ddd;
+  letter-spacing: 0.075em;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 3em;
+  left: 49%;
 }
 
+.jumbotron__content h2 {
+  font-weight: 200;
+  color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
 
 /* Navigation */
-
-.main-nav a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.82em;
-  font-weight: 400;
-  color: #000;
-  line-height: 1.4;
-  letter-spacing: 0.12em;
-  text-decoration: none;
-  display: inline-block;
-}
 
 .main-nav {
   /* border: 1px solid green; */
@@ -206,6 +218,9 @@ h1 {
 }
 
 ul.nav li {
+  font-size: 0.82em;
+  font-weight: 400;
+  letter-spacing: 0.12em;
   float: right;
   line-height: 1;
   margin-right: 45px;
@@ -224,44 +239,27 @@ ul.nav li {
 /* Projects Section */ 
 
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.4em;
-  font-weight: 600;
-  color: #333;
   line-height: 0.25;
-  letter-spacing: 0.05em;
-  text-align: left;
 }
 
  h3 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.4em;
   font-weight: 300;
-  color: #333;
   line-height: 0.3;
-  letter-spacing: 0.05em;
-  text-align: left;
  }
 
 h5 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.92em;
-  font-weight: 600;
   color: #4a4a4a;
-  line-height: 1.4;
-  letter-spacing: 0.05em;
-  text-decoration: none;
   margin-bottom: 0.01em;
 }
 
 p {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.72em;
   font-weight: 200;
   color: #b0b0b0;
-  line-height: 1.4;
   letter-spacing: 0.12em;
-  text-decoration: none;
   margin-top: 0.1em;
 }
 
@@ -277,12 +275,15 @@ p {
 
 /* Column 1 Projects */
 
+.col-1, .col-2 {
+  width: 50%;
+  text-align: center;
+}
+
 .col-1 {
   /* border: 1px solid cyan; */
   padding: 38.5em 2em 5em 10em; /* 10em is confirmed */
-  width: 50%;
   float: left;
-  text-align: center;
 }
 
 /* Column 2 Projects */
@@ -290,9 +291,7 @@ p {
 .col-2 {
   /* border: 1px solid magenta; */
   padding: 23.4em 11em 2em 0.3em;
-  width: 50%;
   float: right;
-  text-align: center;
 }
 
 /* Footer */
@@ -301,44 +300,38 @@ p {
   clear: both;
   color: #fff;
   background-color: #000;
-  overflow: auto;
 }
 
 h4 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.15em;
   font-weight: 400;
   color: #fff;
-  line-height: 1.4;
-  letter-spacing: 0.05em;
-
 }
 
 .page-footer a {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.82em;
   font-weight: 300;
   color: #fff;
-  line-height: 1.4;
   letter-spacing: 0.12em;
-  text-decoration: none;
 }
 
 .page-footer p {
   color: #fff;
 }
 
+.social-media, .contact-info {
+  float: left;
+}
+
 .social-media {
   /*border: 1px solid magenta; */
   width: 27.4%;
   margin-left: 12em;
-  float: left;
 }
 
 .contact-info {
   /* border: 1px solid cyan; */
   width: 30%;
-  float: left;
 }
 
 .contact-info img {
