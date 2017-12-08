@@ -196,7 +196,7 @@ h1 {
 }
 
 .main-nav {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100%;
   height: 3em;
   position: fixed;
@@ -271,14 +271,14 @@ p {
 }
 
 .col-2-scroll {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin-left: 0.75em;
 }
 
 /* Column 1 Projects */
 
 .col-1 {
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   padding: 38.5em 2em 5em 10em; /* 10em is confirmed */
   width: 50%;
   float: left;
@@ -288,7 +288,7 @@ p {
 /* Column 2 Projects */
 
 .col-2 {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   padding: 23.4em 11em 2em 0.3em;
   width: 50%;
   float: right;
@@ -301,6 +301,7 @@ p {
   clear: both;
   color: #fff;
   background-color: #000;
+  overflow: auto;
 }
 
 h4 {
@@ -311,9 +312,6 @@ h4 {
   line-height: 1.4;
   letter-spacing: 0.05em;
 
-}
-
-.page-footer ul {
 }
 
 .page-footer a {
@@ -331,15 +329,27 @@ h4 {
 }
 
 .social-media {
-  border: 1px solid magenta;
-  width: 50%;
+  /*border: 1px solid magenta; */
+  width: 27.4%;
+  margin-left: 12em;
   float: left;
 }
 
 .contact-info {
-  border: 1px solid cyan;
-  width: 50%;
-  float: right;
+  /* border: 1px solid cyan; */
+  width: 30%;
+  float: left;
+}
+
+.contact-info img {
+  /* border: 1px solid cyan; */
+  float: left;
+  margin-right: 2em;
+}
+
+.contact-info p {
+  /* border: 1px solid magenta; */
+  padding-top: 2em;
 }
 
 /* ==========================================================================
