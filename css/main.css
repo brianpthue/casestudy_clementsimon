@@ -277,45 +277,73 @@ p {
 }
 
 .col-2-scroll {
-  /* border: 1px solid yellow; */
-  margin-left: 0.75em;
-  border-left: 1.5px solid #ccc;
+  border: 1px solid yellow;
+  padding-top: 10em;
+  padding-left: 3.8em;
+  border-left: 1px solid #d3d3d3;
 }
 
 /* Column 1 Projects */
 
 .col-1, .col-2 {
-  width: 50%;
   text-align: center;
   overflow: auto;
 }
 
 .col-1 {
-  /* border: 1px solid cyan; */
-  padding: 38.65em 2em 5em 10em; /* 10em is confirmed */
+  border: 1px solid magenta;
+  width: 48%;
+  padding: 38.65em 0.2em 5em 11em; /* 10em is confirmed */
   float: left;
 }
 
 /* Column 2 Projects */
 
 .col-2 {
-  /* border: 1px solid magenta; */
-  padding: 21.5em 11em 2em 0.3em;
+  width: 52%;
+  border: 1px solid cyan;
+  padding: 0em 11em 2em 0em;
   float: right;
 }
 
 .project-thumb-col-1, .project-thumb-col-2 {
-  margin-bottom: 4.15em;
+  border: 1px solid cyan;
   position: relative;
   overflow: hidden;
 }
 
+.project-thumb-col-2 {
+  margin-left: 3.8em;
+}
+
+.project-thumb-col-1 img {
+  display: block;
+  width: 100%;
+}
+
 .project-thumb-col-2 img {
-  margin-bottom: 0.9em;
+  display: block;
+  width: 100%;
 }
 
 .project-thumb-col-1:hover img,
 .project-thumb-col-1:focus img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+figcaption {
+  border: 1px solid magenta;
+  padding-top: 0.85em;
+  padding-bottom: 4.2em;
+}
+
+.col-2 figcaption {
+  margin-left: 3.8em;
+}
+/*
+.project-thumb-col-2:hover img,
+.project-thumb-col-2:focus img {
   transform: scale(1.2);
   transition: all 0.5s;
 }
