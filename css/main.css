@@ -277,9 +277,10 @@ p {
 }
 
 .col-2-scroll {
-  border: 1px solid yellow;
-  padding-top: 10em;
-  padding-left: 3.8em;
+  padding-top: 15.9em;
+  padding-left: 1.85em;
+  margin-top: 5.6em;
+  margin-left: 1.8em;
   border-left: 1px solid #d3d3d3;
 }
 
@@ -291,9 +292,8 @@ p {
 }
 
 .col-1 {
-  border: 1px solid magenta;
   width: 48%;
-  padding: 38.65em 0.2em 5em 11em; /* 10em is confirmed */
+  padding: 38.65em 0.3em 5em 11.1em;
   float: left;
 }
 
@@ -301,19 +301,18 @@ p {
 
 .col-2 {
   width: 52%;
-  border: 1px solid cyan;
-  padding: 0em 11em 2em 0em;
+  padding-right: 11.1em;
+  padding-bottom: 0.08em;
   float: right;
 }
 
 .project-thumb-col-1, .project-thumb-col-2 {
-  border: 1px solid cyan;
   position: relative;
   overflow: hidden;
 }
 
 .project-thumb-col-2 {
-  margin-left: 3.8em;
+  margin-left: 3.9em;
 }
 
 .project-thumb-col-1 img {
@@ -333,13 +332,12 @@ p {
 }
 
 figcaption {
-  border: 1px solid magenta;
   padding-top: 0.85em;
   padding-bottom: 4.2em;
 }
 
 .col-2 figcaption {
-  margin-left: 3.8em;
+  margin-left: 3.9em;
 }
 /*
 .project-thumb-col-2:hover img,
@@ -351,7 +349,6 @@ figcaption {
 /* Footer */
 
 .page-footer {
-  border: 1px solid cyan;
   clear: both;
   color: #fff;
   background-color: #000;
