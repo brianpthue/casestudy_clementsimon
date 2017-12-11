@@ -169,7 +169,7 @@ h1 {
   font-size: 3em;
   font-weight: 700;
   color: #000;
-  line-height: 1.21;
+  line-height: 1.20;
   letter-spacing: 0.04em;
   position: fixed;
 }
@@ -195,17 +195,17 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.75em;
   font-weight: 300;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.05em;
   bottom: 0;
-  padding-bottom: 4.5em;
-  left: 50.25%;
+  padding-bottom: 4.8em;
+  left: 50%;
 }
 
 .jumbotron__content h1 {
   font-weight: 100;
   bottom: 0.1em;
   line-height: 0;
-  left: 51%;
+  left: 50.55%;
 }
 
 /* Navigation */
@@ -222,15 +222,15 @@ h1 {
 ul.nav li {
   font-size: 0.82em;
   font-weight: 400;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.10em;
   float: right;
   line-height: 1;
-  margin-right: 45px;
+  margin-right: 41px;
   list-style: none;
 }
 
 .main-nav ul:first-child {
-  margin-right: 185px
+  margin-right: 196.5px
 }
 
 /* .main-nav a:hover {
@@ -341,11 +341,6 @@ p {
   width: 100%;
 }
 
-.project-thumb-col-1:hover img,
-.project-thumb-col-1:focus img {
-  transform: scale(1.2);
-  transition: all 0.5s;
-}
 
 figcaption {
   padding-top: 0.85em;
@@ -355,10 +350,20 @@ figcaption {
 .col-2 figcaption {
   margin-left: 3.9em;
 }
-/*
+
+.project-thumb-col-1:hover img,
+.project-thumb-col-1:focus img,
 .project-thumb-col-2:hover img,
 .project-thumb-col-2:focus img {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.project-thumb-col-1:hover,
+.project-thumb-col-1:focus,
+.project-thumb-col-2:hover,
+.project-thumb-col-2:focus {
+  transform: scale(0.98);
   transition: all 0.5s;
 }
 
@@ -368,13 +373,14 @@ figcaption {
   clear: both;
   color: #fff;
   background-color: #000;
-  padding: 4.5em 2.5em 3.1em 0;
+  padding: 5.15em 0 3em 0;
 }
 
-h4 {
+.page-footer h4 {
   font-size: 1.15em;
   font-weight: 400;
   color: #fff;
+  line-height: 0.3;
 }
 
 .page-footer a {
@@ -394,26 +400,78 @@ h4 {
 }
 
 .social-media {
-  /*border: 1px solid magenta; */
-  width: 27.4%;
+  width: 27.5%;
   margin-left: 12em;
+  line-height: 1.9;
 }
 
 .contact-info {
-  /* border: 1px solid cyan; */
   width: 30%;
+  padding-top: 0.25em;
 }
 
 .contact-info img {
-  /* border: 1px solid cyan; */
   float: left;
-  margin-right: 2em;
+  margin-right: 1.8em;
+  padding-top: 0.95em;
 }
 
 .contact-info p {
   /* border: 1px solid magenta; */
-  padding-top: 2em;
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  padding-top: 3.7em;
+  line-height: 0;
+  display: block;
 }
+
+.social-media ul {
+  padding-left: 1.28em;
+}
+
+.social-media a {
+  position: relative;
+  display: inline-block;
+}
+
+.social-media a:hover:before {
+  content: '';
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  position: absolute;
+  right: 115%;
+  top: 50%;
+}
+
+.social-media a:hover:after {
+  content: '';
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  position: absolute;
+  left: 115%;
+  top: 50%;
+}
+
+
+/* .socia-media a {
+  position: relative;
+  display: inline-block;
+}
+
+.social-media a:hover:after {
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 10px auto;
+  width: 50%;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+}
+
+*/
 
 /* ==========================================================================
 Helper classes
