@@ -341,13 +341,12 @@ p {
   width: 100%;
 }
 
-
-figcaption {
+.project-info {
   padding-top: 0.85em;
   padding-bottom: 4.2em;
 }
 
-.col-2 figcaption {
+.col-2 .project-info {
   margin-left: 3.9em;
 }
 
